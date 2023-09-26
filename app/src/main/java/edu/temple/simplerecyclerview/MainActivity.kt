@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         // Step 1: Reference RecyclerView object
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
 
-        val array = listOf<Int>(100)(it + 1) * 2
+        val array = Array(100){(it + 1) * 2}
 
         //Step 2: Provide a LayoutManager
         recyclerView.layoutManager = LinearLayoutManager(this)
